@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            font-size: 10px;
+        }
+        
+        button{
+            width:100%;
+            height: 100%;
+            font-size: 3rem;
+        }
+        table{
+            width: 60rem;
+            height: 60rem;
+            border: .4rem solid orangered;
+            background-color: orange;
+            
+        }
+        input,th{
+            width: 98%;
+            height: 6rem;
+            /* border-radius: 2rem; */
+            /* border: .2rem solid orangered; */
+            background-color:#333333;
+            margin-bottom: 1rem;
+            padding: 0px;
+            margin: 0px;
+        }
+        th{
+            border: .2rem solid orangered;
+            margin-bottom: 1rem;
+
+
+        }
+        tr{
+            margin-bottom: 1rem;
+        }
+        td{
+            width: 12rem;
+            height:10rem;
+            /* border-radius: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center; */
+            
+        }
+        button{
+            width: 11rem;
+            height: 10rem;
+        }
+        @media(max-width:500px) {
+
+
+html {
+    font-size: 6px;
+}
+
+
+
+
+}
+
+@media(max-width:840px) and (min-width:501px) {
+
+
+html {
+    font-size: 6px;
+}
+
+
+}
+       
+    </style>
+</head>
+<body>
+    <table  align="center">
+        <tr>
+            <th colspan="4">
+                <input type="text" id="i1">
+            </th>
+        </tr>
+        <tr>
+           <td><button onclick="reset()">C</button></td>
+           <td><button onclick=""><=</button></td>
+           <td><button onclick="enterdata(`%`)" >%</button></td>
+           <td><button onclick="enterdata(`/`)">/</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="enterdata(`7`)">7</button></td>
+            <td><button onclick="enterdata(`8`)">8</button></td>
+            <td><button onclick="enterdata(`9`)">9</button></td>
+            <td><button onclick="enterdata(`x`)">X</button></td>
+         </tr>
+         <tr>
+            <td><button onclick="enterdata(`4`)">4</button></td>
+            <td><button onclick="enterdata(`5`)">5</button></td>
+            <td><button onclick="enterdata(`6`)">6</button></td>
+            <td><button onclick="enterdata(`-`)">-</button></td>
+         </tr>
+         <tr>
+            <td><button onclick="enterdata(`1`)">1</button></td>
+            <td><button onclick="enterdata(`2`)">2</button></td>
+            <td><button onclick="enterdata(`3`)">3</button></td>
+            <td><button onclick="enterdata(`+`)">+</button></td>
+         </tr>
+         <tr>
+            <td><button>#</button></td>
+            <td><button onclick="enterdata(`0`)">0</button></td>
+            <td><button onclick="enterdata(`.`)">.</button></td>
+            <td><button onclick="result()">=</button></td>
+         </tr>
+
+
+    </table>
+    <script>
+        function reset(){
+            document.getElementById(`i1`).value='';
+        }
+        function enterdata(x){
+            document.getElementById(`i1`).value+=x;
+        }
+        
+        function result(){
+        try{
+        var x = eval(document.getElementById(`i1`).value);
+        document.getElementById(`i1`).value= x;
+        }
+        catch{
+        document.getElementById(`i1`).value=`! Dhang se bhar !`;
+        }
+        }
+        
+    </script>
+</body>
+</html>

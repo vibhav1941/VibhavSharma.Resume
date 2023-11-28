@@ -1,0 +1,21 @@
+<footer>
+          <div class="foot">
+            <div class="footin1">
+              <h3 class="h7">Contact us</h3>
+              <img src="whtsapp (1).png" alt="WA" class="socialsite">
+              <h3 class="h3">8708321479</h3>
+              <img src="phone (1).png" alt="Phone" class="socialsite">
+              <h3 class="h3">8708321479</h3>
+              <img src="insta (1).png" alt="Insta" class="socialsite">
+              <h3 class="h3">@vibhav3935</h3>
+            </div>
+            <div class="footin2">
+              <h3 class="h5">Developed by:</h3>
+              <h3 class="h4">Vibhav Sharma</h3>
+            </div>
+          </div>
+
+          <div class="lowfoot">
+            <h2 class="h6">All Right Reserved &copy; : Vibhav Sharma</h2>
+          </div>
+        </footer>

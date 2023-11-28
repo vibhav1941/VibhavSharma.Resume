@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+         html {
+    font-size: 62.5%;
+  }
+
+  * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
+  .head {
+    width: 100%;
+    height: 5rem;
+    border-top: .8rem solid deepskyblue;
+    padding-left: 2rem;
+    font-size: 4rem;
+    color: skyblue;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+  }
+
+  .nav>li {
+    width: 146.5px;
+    height: 4rem;
+    line-height: 4rem;
+    background-color: aliceblue;
+    float: left;
+    text-align: center;
+    list-style: none;
+    position: relative;
+    z-index: 1;
+
+
+  }
+
+  .nav li a:hover {
+    background-color: black;
+    color: white;
+  }
+
+  .nav li a {
+    display: block;
+    color: darkgray;
+    text-decoration: none;
+    font-size: 1.9rem;
+  }
+
+  ul li ul {
+    display: none;
+  }
+
+  ul li:hover ul {
+    display: block;
+  }
+  .img{
+            width: 60rem;
+            height: 20rem;
+            background-color: yellowgreen;
+            margin: 8rem auto;
+            border-radius: 3rem;
+            box-shadow: .5rem .5rem 2rem gray;
+            position: relative;
+  }
+  .imgin{
+    width: 100%;
+    height: 100%;
+    border-radius: 3rem;
+  }
+  .cont{
+    width: 100%;
+    height: 40rem;
+    /* border: .1rem solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  
+  }
+  .contin{
+    width: 35rem;
+    height: 37rem;
+    border-radius: 2rem;
+    box-shadow: .1rem .1rem 1rem grey;
+    padding: 2rem;
+    
+
+  }
+  .h1{
+    font-size: 4rem;
+    color: skyblue;
+  }
+  .p{
+    font-size: 2.2rem;
+    color: grey;
+  }
+  .back{
+
+width: 57rem;
+height: 6rem;
+margin: 2rem auto;
+text-align: center;
+color: darkgray;
+border-radius: 1rem;
+font-size: 3rem;
+box-shadow: .1rem .1rem 1rem grey ;
+text-decoration: none;
+line-height: 6rem;
+    display: block;
+    
+  }
+  @media(max-width:550px) {
+    .li {
+      display: none;
+    }
+
+    html {
+      font-size: 31.5%;
+    }
+
+    .nav>li {
+      width: 70px;
+    }
+
+   .headingin{
+    height: 30rem;
+
+   }
+   .cont{
+    height: 700px;
+   }
+   .contin{
+    width: 250px;
+    height: 210px;
+   }
+   .p{
+    font-size: 13px;
+    line-height: 17px;
+   }
+
+  }
+
+  @media(max-width:1110px) and (min-width:551px) {
+    .li {
+      display: none;
+    }
+
+    html {
+      font-size: 41.5%;
+    }
+
+    .nav>li {
+      width: 110px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="head">BCA-3</div>
+        <nav>
+          <ul class="nav">
+            <li><a href="">About</a></li>
+            <li><a href="">Subjects</a>
+              <ul class="nav">
+                <li><a href="#" class="a">C.N</a></li>
+                <li><a href="#" class="a">W.D</a></li>
+                <li><a href="#" class="a">V.B</a></li>
+                <li><a href="#" class="a">A.I</a></li>
+                <li><a href="" class="a">M-M.T</a></li>
+                <li><a href="" class="a">O.S</a></li>
+              </ul>
+            </li>
+            <li><a href="">Time-table</a>
+              <ul class="nav">
+                <li><a href="">Class</a></li>
+                <li><a href="">Lab</a></li>
+              </ul>
+            </li>
+            <li><a href="">Notice</a></li>
+            <li class="li"><a href=""></a></li>
+            <li class="li"><a href=""></a></li>
+    
+            <li class="li"><a href=""></a></li>
+            <li class="li"><a href=""></a></li>
+            <li><a href="">Log-in</a>
+              <ul class="nav">
+                <li><a href="">Stu</a></li>
+                <li><a href="">Guest</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      <div class="img"><img src="BCAabout (1).png" alt="BCA" class="imgin"></div>
+    </header>
+      <div class="cont">
+        <div class="contin">
+            <h1 class="h1">About</h1>
+            <p class="p"> The full form of BCA is bachelor's in Computer Application. BCA is a 3-year undergraduate degree programme that
+                focusses on knowledge on the basics of computer application and software development. A BCA degree is considered
+                to be at par with a BTech/BE degree in Computer Science or Information Technology.</p>
+        </div>
+        <div class="contin">
+            <h1 class="h1">Subjects</h1>
+            <p class="p">BCA syllabus includes various BCA subjects like programming languages, statistics, computer fundamentals, data
+                structures, database management systems, programming in Java, computer networks, embedded systems, computer
+                architecture, multimedia applications, and computer graphics and animation.</p> 
+        </div>
+        <div class="contin">
+            <h1 class="h1">After BCA</h1>
+            <p class="p">A BCA graduate has a great scope in jobs as a Web Designer, System Manager, Software Developer, Computer
+                Programmer, Web Developer, Software Developer, software tester, etc. depending on the skills acquired by the
+                student at the time of BCA</p>
+        </div>
+      </div>
+      <hr>
+    <a href="mainpa.html" class="back">Click here to go back at previus page</a>
+</body>
+</html>

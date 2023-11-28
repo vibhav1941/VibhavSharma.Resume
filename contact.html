@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootrap.css">
+
+    <title>Dharmic Collection/Contact</title>
+    <style>
+        html {
+            font-size: 10px;
+            margin: 0px;
+            padding: 0px
+        }
+
+
+
+        .navbar {
+            background: linear-gradient(120deg, rgb(255, 187, 0) 55%, rgb(255, 140, 0));
+
+            font-weight: bold;
+            margin-bottom: 4rem;
+        }
+
+        .nav-link {
+            color: white;
+            font-size: 1.7rem;
+        }
+
+
+
+        /* footer css start */
+        .end {
+            margin: 0px;
+            padding: 0%;
+        }
+
+        .endin {
+            width: 100%;
+            height: 45rem;
+            margin-top: 1rem;
+            background-image: linear-gradient(120deg, rgb(2, 2, 2, 0.5), rgb(9, 9, 9, 0.5)), url('footer img.jpg');
+            background-size: 100% 100%;
+
+        }
+
+        .shlok {
+            width: 100%;
+            height: 45rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 10rem;
+            color: rgb(255, 204, 0);
+            text-shadow: .5rem .5rem rgb(255, 119, 0);
+            /* border: 1px solid red; */
+        }
+
+        .copy {
+            width: 100%;
+            height: 7rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.7rem;
+            color: white;
+
+        }
+
+        .endin1 {
+            height: 7rem;
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background: linear-gradient(120deg, rgb(255, 187, 0) 55%, rgb(255, 140, 0));
+            padding: 0px;
+            margin: 0px;
+        }
+        .main{
+            /* box-shadow: 0px 0px 1.2rem #252525; */
+            width: 60rem;
+            height: 60rem;
+            border: .5rem dotted rgb(255, 140, 0);
+            border-radius: 4rem;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            
+        }
+        input{
+           
+            display: block;
+            border: none;
+            border-bottom:.2rem solid rgb(255, 187, 0);
+            font-size: 1.7rem;
+            padding: 1rem;
+            color: grey;
+            font-family: 'Courier New', Courier, monospace;
+            width: 40rem;
+        }
+        textarea{
+            margin-top: 4rem;
+            border: .1rem solid  rgb(255, 187, 0);
+            display: block;
+            width: 40rem;
+        }
+        .head{
+            width: 100%;
+            text-align: center;
+            font-size: 2.5rem;
+        }
+
+
+       
+
+        /* back button css start  */
+        .back {
+            display: flex;
+            justify-content: start;
+            text-decoration: none;
+            padding-left: 3rem;
+        }
+
+        .backbutton {
+            padding: .5rem 2rem;
+            border-radius: 3rem;
+            color: rgb(255, 119, 0);
+            border: none;
+            background-color: rgb(255, 204, 0);
+            font-size: 2rem;
+            box-shadow: 0px 0px .5rem #252525;
+            font-weight: bolder;
+        }
+        .submit{
+            width: 40rem;
+            height: 5rem;
+            padding: .3rem 1rem;
+            border-radius: 2rem;
+            color: rgb(255, 119, 0);
+            border: none;
+            background-color: rgb(255, 204, 0);
+            font-size: 2rem;
+            /* box-shadow: 0px 0px .5rem #252525; */
+            font-weight: bolder;
+            margin-top: 3rem;
+        }
+
+
+        @media(max-width:500px) {
+
+
+            html {
+                font-size: 4px;
+            }
+
+
+
+
+        }
+
+        @media(max-width:840px) and (min-width:501px) {
+
+
+            html {
+                font-size: 6px;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar started -->
+    <nav class="navbar">
+        <ul class="nav">
+            <li class="nav-item"><a href="first.html" class="nav-link active">Home</a></li>
+            <li class="nav-item"><a href="aboutus.html" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- navbar end  -->
+    <div class="cantainer main">
+        <form action="">
+            <h1 class="head">Contact us</h1>
+            <input type="text" placeholder="first Name">
+            <input type="text" placeholder="Last Name">
+            <input type="number" placeholder="Age">
+            <input type="number" placeholder="Ph.number">
+            <input type="email" placeholder="E-mail">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Review our Website"></textarea>
+            <button class="submit" onclick="sub()">Submit</button>
+
+        </form>
+    </div>
+   
+    <!-- back button start  -->
+    <div class="row">
+        <div class="col-12"><a href="first.html" class="back"><button class="backbutton">Back</button></a></div>
+    </div>
+    <!-- back button end  -->
+    <!-- footer start  -->
+    <div class="container-fluid end">
+        <div class="container-fluid endin">
+            <div class="row">
+                <h1 class="shlok">वसुधैव कुटुम्बकम्</h1>
+            </div>
+        </div>
+        <div class="row endin1">
+            <div class="row">
+                <h6 class="copy">All Right Reserved 2023</h6>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="bootstrap.js"></script>
+    <script>
+        function sub(){
+            alert(`Your Contact Information and Reviewis is been Recieved. We will Contact You Our Self as Soon as Possible *THANKS*`);
+        }
+    </script>
+
+</body>
+
+</html>
