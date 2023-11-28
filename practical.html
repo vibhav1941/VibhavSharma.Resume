@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practical</title>
+    <style>
+        html {
+            font-size: 62.5%;
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .head {
+            width: 100%;
+            height: 5rem;
+            border-top: .8rem solid deepskyblue;
+            padding-left: 2rem;
+            font-size: 4rem;
+            color: skyblue;
+            font-weight: bolder;
+            margin-bottom: 1rem;
+        }
+
+        .nav>.lline,.li {
+            width: 146.5px;
+            height: 4rem;
+            line-height: 4rem;
+            background-color: aliceblue;
+            float: left;
+            text-align: center;
+            list-style: none;
+            position: relative;
+            z-index: 1;
+
+
+        }
+
+        .nav li a:hover {
+            background-color: black;
+            color: white;
+        }
+
+        .nav li a {
+            display: block;
+            color: darkgray;
+            text-decoration: none;
+            font-size: 1.9rem;
+        }
+
+        ul li ul {
+            display: none;
+        }
+
+        ul li:hover ul {
+            display: block;
+        }
+
+        .heading {
+            width: 30rem;
+            height: 10rem;
+            /* border: .1px solid red; */
+            text-align: center;
+            margin: 5rem auto;
+            padding-top: 3rem;
+            font-size: 5rem;
+            color: skyblue;
+        }
+
+        .headingin {
+            width: 80%;
+            height: 18rem;
+            font-size: 3rem;
+            color: grey;
+            border-left: 1.4rem rgba(152, 239, 217, 1) solid;
+            padding: 2rem;
+            margin: 1rem;
+            position: relative;
+        }
+        .ai{
+      width: 28rem;
+      height: 6rem;
+      font-size: 4rem;
+      color: #9bc5e5;
+      margin: 4rem 2rem;
+      border-bottom: .2rem solid #5db8fd;
+      text-align: center;
+      padding: 1rem;
+      
+    }
+    
+    .line{
+        margin: 4rem;
+        font-size: 2.5rem;
+        color: grey;
+        font: 2.5rem;
+
+    }
+    .back{
+
+        width: 57rem;
+height: 6rem;
+margin: 2rem auto;
+text-align: center;
+color: darkgray;
+border-radius: 1rem;
+font-size: 3rem;
+box-shadow: .1rem .1rem 1rem grey ;
+text-decoration: none;
+line-height: 6rem;
+    display: block;
+
+}
+.pdf{
+  width: 60rem;
+  height: 40rem;
+  margin: 2rem 1rem;
+}
+#wd{
+  width: 35rem;
+}
+
+        @media(max-width:550px) {
+            .li {
+                display: none;
+            }
+
+            html {
+                font-size: 31.5%;
+            }
+
+            .nav>.lline,.li {
+                width: 70px;
+            }
+
+            .headingin {
+                height: 30rem;
+                width: 90%;
+            }
+
+        }
+
+        @media(max-width:1110px) and (min-width:551px) {
+            .li {
+                display: none;
+            }
+
+            html {
+                font-size: 40.5%;
+            }
+
+            .nav>li {
+                width: 110px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="head">BCA-3</div>
+        <nav>
+            <ul class="nav">
+                <li class="lline"><a href="">About</a></li>
+                <li class="lline"><a href="">Subjects</a>
+                    <ul class="nav">
+                        <li class="lline"><a href="#" class="a">C.N</a></li>
+                        <li class="lline"><a href="#" class="a">W.D</a></li>
+                        <li class="lline"><a href="#" class="a">V.B</a></li>
+                        <li class="lline"><a href="#" class="a">A.I</a></li>
+                        <li class="lline"><a href="" class="a">M-M.T</a></li>
+                        <li class="lline"><a href="" class="a">O.S</a></li>
+                    </ul>
+                </li>
+                <li class="lline"><a href="">Time-table</a>
+                    <ul class="nav">
+                        <li class="lline"><a href="">Class</a></li>
+                        <li class="lline"><a href="">Lab</a></li>
+                    </ul>
+                </li>
+                <li class="lline"><a href="">Notice</a></li>
+                <li class="li"><a href=""></a></li>
+                <li class="li"><a href=""></a></li>
+
+                <li class="li"><a href=""></a></li>
+                <li class="li"><a href=""></a></li>
+                <li class="lline"><a href="">Log-in</a>
+                    <ul class="nav">
+                        <li class="lline"><a href="">Stu</a></li>
+                        <li class="lline"><a href="">Guest</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    <h1 class="heading">Practical's</h1>
+    <p class="headingin">
+        There are some Programs which is ginen to you by the Professors on there respected subject and will
+        also give you 5 marks in your assessment it should be made on practical file in good handwrtiting and diagram
+        should be drawn using pencils only paractical subjects have practical file
+    </p>
+    </header>
+    <h2 class="ai">Virtual Basic</h2>
+    <ol class="ol" type="1">
+        <li class="line">Find the sum of two numbers</li>
+        <li class="line">Find a area of a circle</li>
+        <li class="line">Find larger number between 2 numbers</li>
+        <li class="line">Find th e sum of 2 natural number</li>
+        <li class="line">Find the mean of two number</li>
+        <li class="line">Find if the given number is palindrome or not</li>
+        <li class="line">Illustrate the log-in screen using V.B</li>
+    </ol>
+    <iframe src="/mainpage/visual (vb) basic practical file.pdf" frameborder="0" class="pdf">Virtual Basic Practical</iframe>
+    <h2 class="ai" id="wd">Web Designing</h2>
+    <ol class="ol">
+        <li class="line">Hoe to create a e-mail account</li>
+        <li class="line">Explain Working of a web browser</li>
+        <li class="line">BAsic structure oh HTML using a program</li>
+        <li class="line">Text structuring and formatting in HTML</li>
+        <li class="line">Explain the working of linking in HTML using a program </li>
+        
+    </ol>
+    <iframe src="/mainpage/WEB DESIGNING PRACTICAL.pdf" frameborder="0" class="pdf"></iframe>
+    <hr>
+    <a href="mainpa.html" class="back">Click here to go back at previus page</a>
+
+
+
+
+</body>
+
+</html>

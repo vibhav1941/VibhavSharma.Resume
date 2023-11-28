@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BCA-3</title>
+    <style>
+        html {
+            font-size: 62.5%;
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .head {
+            width: 100%;
+            height: 5rem;
+            border-top: .8rem solid deepskyblue;
+            padding-left: 2rem;
+            font-size: 4rem;
+            color: skyblue;
+            font-weight: bolder;
+            margin-bottom: 1rem;
+        }
+
+        .nav>li {
+            width: 146.5px;
+            height: 4rem;
+            line-height: 4rem;
+            background-color: aliceblue;
+            float: left;
+            text-align: center;
+            list-style: none;
+            position: relative;
+            z-index: 99;
+
+
+        }
+
+        .nav li a:hover {
+            background-color: black;
+            color: white;
+        }
+
+        .nav li a {
+            display: block;
+            color: darkgray;
+            text-decoration: none;
+            font-size: 1.9rem;
+            position: relative;
+        }
+
+        ul li ul {
+            display: none;
+        }
+
+        ul li:hover ul {
+            display: block;
+        }
+
+        /* for the college photo */
+        .banner {
+            width: 60rem;
+            height: 30rem;
+            position: relative;
+            background-color: snow;
+            margin: 8rem auto;
+            border-radius: 3rem;
+            box-shadow: .5rem .5rem 2rem gray;
+            animation-name: example;
+            animation-duration: 12s;
+            animation-iteration-count: infinite;
+            background-size: 60rem 30rem;
+            background-position:center ;
+            overflow: hidden;
+        }
+
+        .focus {
+            width: 10rem;
+            height: 7rem;
+            line-height: 7rem;
+            text-align: center;
+            color: skyblue;
+            border-left: 1.2rem solid #6ce268;
+            font-size: 3rem;
+            margin: auto;
+            padding-left: .5rem;
+        }
+        .box{
+            width: 100%;
+            height:260px;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            margin-top: 5rem;
+        }
+
+        .contin1 {
+            width: 28rem;
+            height: 26rem;
+            border-left: 2rem solid #6ce268;
+            padding: 2rem;
+            margin: 1rem;
+
+        }
+
+        .contin1 .h1 {
+            font-size: 3.5rem;
+            color: deepskyblue;
+        }
+
+        .contin1>.p {
+            font-size: 2rem;
+            color: gray;
+
+        }
+        .contin1 p a{
+            color: orange;
+        } 
+        .prof{
+  width: 23rem;
+  height: 7rem;
+  line-height: 7rem;
+  margin: 5rem  auto;
+  border-left: 1rem solid #6CE268;
+  padding-left: 1rem;
+  
+  
+ 
+  
+}
+.prof h2{
+  height: 5rem;
+  font-size: 4.5rem;
+  color: skyblue;
+  margin-top: 3rem;
+  
+}
+.container{
+  position: relative;
+  width:20rem;
+  height: 13rem;
+  border-radius: 10px;
+ 
+  margin-top: 8rem;
+  box-shadow: 0px .5rem 2rem grey;
+  transition: 0.3s;
+  padding: 2rem 4rem;
+  background-color: white;
+  cursor: pointer;
+}
+  
+.lakhcont{
+   width:100%;
+height: 20rem;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.container:hover{
+  height: 17rem;
+}
+.imgin{
+  position: relative;
+  width:100%;
+  height: 12rem;
+  transform: translatey(-8rem);
+  z-index: 99;
+}
+.lakh{
+  width: 100%;
+  height: 110%;
+  border-radius: 1rem;
+  box-shadow: 0px .1rem 1rem;
+}
+.content{
+  padding-bottom: 1rem;
+  text-align: center;
+  transform: translateY(-20rem);
+  font-size:- 1rem;
+  opacity: 0;
+  transition: 0.3s;
+  color: skyblue;
+  
+  
+
+  
+}
+.container:hover >.content{
+  opacity: 1;
+  transform: translateY(-5rem);
+}
+@keyframes example{
+   0%{background-image: url(Banner1.jpg)}
+  20%{background-image: url(Banner6.jpg)}
+  40%{background-image: url(Banner2.jpg)}
+  60%{background-image: url(Banner3.jpg)}
+  80%{background-image: url(Banner4.jpg)}
+ 100%{background-image: url(Banner5.jpg)}
+}
+.imp{
+  width:100%;
+  height: 57rem;
+  background-color: rgb(208, 233, 255);
+  padding: 3rem 2rem;
+  margin-top: 9rem;
+}
+.not{
+  margin: 3rem;
+  font-size: 4rem;
+  font-family: fantasy;
+  color: skyblue;
+}
+.not1{
+  margin: 3rem;
+  font-size: 2.5rem;
+  font-family: fantasy;
+  color: skyblue;
+}
+  
+  
+
+.important li a{
+  color: grey;
+  font-size: 2.5rem;
+  margin-left: 2.5rem;
+  margin-bottom: 2rem;
+  text-decoration: none;
+}
+.important li{
+  list-style: none;
+}
+.important ul h1{
+  padding-bottom: 2rem;
+}
+.foot{
+  width: 100%;
+  height: 50rem;
+  display: flex;
+  margin-top: 3rem;
+}
+.footin1{
+  width: 50%;
+  height:100%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.footin2{
+  width: 50%;
+  height:100%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid grey;
+}
+.socialsite{
+  width: 6rem;
+  height: 6rem;
+  margin: 1rem;
+}
+.h3{
+  font-size: 2rem;
+  color: grey;
+}
+.h4{
+  font-size: 3rem;
+  color: grey;
+
+}
+.h5{
+  font-size: 2rem;
+  color: grey;
+}
+.h7{
+  font-size: 3rem;
+  color: grey;
+}
+.lowfoot{
+  width: 100%;
+  height: 6rem;
+  line-height: 6rem;
+  text-align: center;
+  font-size: 2rem;
+  color: snow;
+  background-color: black;
+}
+        @media(max-width:550px) {
+            .li{
+                display: none;
+            }
+
+            html {
+                font-size: 31.5%;
+            }
+
+            .nav>li {
+                width: 70px;
+            }
+            .lakhcont{
+              height: 38rem;
+            }
+            .imp{
+              margin-top: 15rem;
+            }
+
+        }
+
+        @media(max-width:1100px) and (min-width:551px) {
+            #a,#b{
+                display: none;
+            }
+
+            html {
+                font-size: 41.5%;
+            }
+
+            .nav>li {
+                width: 110px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div class="head">BCA-3</div>
+        <nav>
+            <ul class="nav">
+                <li><a href="about.html">About</a></li>
+                <li><a href="">Subjects</a>
+                    <ul class="nav">
+                        <li><a href="#" class="a">C.N</a></li>
+                        <li><a href="#" class="a">W.D</a></li>
+                        <li><a href="#" class="a">V.B</a></li>
+                        <li><a href="#" class="a">A.I</a></li>
+                        <li><a href="#" class="a">M-M.T</a></li>
+                        <li><a href="#" class="a">O.S</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Time-table</a>
+                    <ul class="nav">
+                        <li><a href="">Class</a></li>
+                        <li><a href="">Lab</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Notice</a></li>
+                <li class="li" id="a"><a href=""></a></li>
+                <li class="li" id="b"><a href=""></a></li>
+
+                <li class="li" ><a href=""></a></li>
+                <li class="li"><a href=""></a></li>
+                <li><a href="">Log-in</a>
+                    <ul class="nav">
+                        <li><a href="">Stu</a></li>
+                        <li><a href="">Guest</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    
+    <!-- for college pics -->
+    <div class="banner"></div>
+    </header>
+    <!-- for focus -->
+    <div class="focus">
+        <h1 class="st">focus</h1>
+    </div>
+    <!-- focus box -->
+    <div class="box">
+        <div class="contin1">
+            <h2 class="h1">Assignments</h2>
+            <p class="p">These are Some work which Is given to you by the Profe-ssors on there respected Subjects and it
+                will also give you 5 free mark&nbsp;<a class="a1" href="assignmentR.html">Read more</a></p>
+        </div>
+        <div class="contin1">
+            <h2 class="h1">Test</h2>
+            <p class="p">These are Some Topics which Is given to you by the Professors on there respected Subjects which
+                we have to learn and it will also give you 5 free mark&nbsp;<a class="a1" href="test.html">Read
+                    more</a></p>
+        </div>
+        <div class="contin1" id="j1">
+            <h2 class="h1">Practical</h2>
+            <p class="p">These are works which we done in lab and then write it in our practice files and these files
+                are realy important for our practical exam&nbsp;<a class="a1" href="practical.html">Read more</a></p>
+        </div>
+        <div class="contin1" id="j2">
+            <h2 class="h1">Notebooks</h2>
+            <p class="p">These are notes which we make in our own language from the book after reading it and it also
+                help us during our exams and test&nbsp;<a href="#" class="a1">Read more</a> </p>
+        </div>
+    </div>
+    <div class="prof">
+        <h2 class="profin">Our Prof</h2>
+    </div>
+    <div class="lakhcont">
+        <div class="container">
+          <div class="imgin">
+            <img class="lakh"src="lakhibro.jpg" alt="image">
+          </div>
+          <div class="content">
+          <h2>Mr.Lakhwinder</h2>
+          <p>(Head of Science Department)</p>
+          </div>
+        </div>
+        <div class="container">
+          <div class="imgin">
+            <img class="lakh" src="Vishal.jpg" alt="image">
+          </div>
+          <div class="content">
+            <h2>Mr.Vishal</h2>
+            <p>(Prof.Visual Basic)</p>
+          </div>
+        </div>
+        <div class="container">
+          <div class="imgin">
+            <img class="lakh" src="Priyanka.jpg" alt="image">
+          </div>
+          <div class="content">
+            <h2>Mrs.Priyanka</h2>
+            <p>(Prof.Operating System)</p>
+          </div>
+        </div>
+         <div class="container">
+          <div class="imgin">
+            <img class="lakh"src="navneet.jpg" alt="image">
+          </div>
+          <div class="content">
+          <h2>Mr.Navneet</h2>
+          <p>(Prof.Multi-Media Tool)</p>
+          </div>
+        </div>
+        <div class="container">
+          <div class="imgin">
+            <img class="lakh" src="404.jpg" alt="image">
+          </div>
+          <div class="content">
+            <h2>Mr.Amarpreet</h2>
+            <p>(Prof.Computer Network)</p>
+          </div>
+        </div>
+        <div class="container">
+          <div class="imgin">
+            <img class="lakh" src="404.jpg" alt="image">
+          </div>
+          <div class="content">
+            <h2>Mrs.Sandeepi</h2>
+            <p>(Prof.Artficial Intelligence)</p>
+          </div>
+        </div>
+          </div>
+        </div>
+        <div class="imp">
+          <h1 class="not">Important Links</h2>
+            <ul class="important">
+              <li><a href="#">: Absenty List</a></li>
+              <li><a href="#">: Imp Dates</a></li>
+              <li><a href="http://gcchhachhrauli.ac.in/Home">: GC Chhachhrauli official website</a></li>
+              <li><a href="https://www.kuk.ac.in/">: kurukshetra University oficial wbsite</a></li>
+              <li><a href="https://www.w3schools.com/">: W3school</a></li>
+              <li><a href="https://www.geeksforgeeks.org/">: Geaksforgeaks</a></li>
+              <h1 class="not1">You-tube chanels to study</h1><br>
+              <li><a href="https://youtube.com/c/CodeWithHarry">: Code with harry</a></li>
+              <li><a href="https://youtube.com/c/LearnCodingOfficial">: Learn coding</a></li>
+              <li><a href="https://youtube.com/c/ApnaCollegeOfficial">: Apna college</a></li>
+            </ul>
+            </div>
+        </div>
+        <footer>
+          <div class="foot">
+            <div class="footin1">
+              <h3 class="h7">Contact us</h3>
+              <img src="whtsapp (1).png" alt="WA" class="socialsite">
+              <h3 class="h3">8708321479</h3>
+              <img src="phone (1).png" alt="Phone" class="socialsite">
+              <h3 class="h3">8708321479</h3>
+              <img src="insta (1).png" alt="Insta" class="socialsite">
+              <h3 class="h3">@vibhav3935</h3>
+            </div>
+            <div class="footin2">
+              <h3 class="h5">Developed by:</h3>
+              <h3 class="h4">Vibhav Sharma</h3>
+            </div>
+          </div>
+          <div class="lowfoot">
+            <h2 class="h6">All Right Reserved &copy; : Vibhav Sharma</h2>
+          </div>
+        </footer>
+
+          
+</body>
+
+</html>
